@@ -73,7 +73,7 @@ export const About = () => {
 
   const publications = [
     {
-      title: "ClinSegAI: Post-processing framework for histopathology segmentation and radiomics preservation - Computers in Biology and Medicine",
+      title: "ClinSegAI: Post-Processing Framework for Histopathology Segmentation and Radiomics Preservation - Computers in Biology and Medicine",
       href: "https://www.sciencedirect.com/science/article/abs/pii/S001048252501652X",
     },
     {
