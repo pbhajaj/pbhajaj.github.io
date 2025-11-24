@@ -73,6 +73,10 @@ export const About = () => {
 
   const publications = [
     {
+      title: "ClinSegAI: Post-processing framework for histopathology segmentation and radiomics preservation - Computers in Biology and Medicine",
+      href: "https://link.springer.com/chapter/10.1007/978-981-16-7657-4_71",
+    },
+    {
       title: "Suspect Facial Image Generation using DCGAN - Springer",
       href: "https://link.springer.com/chapter/10.1007/978-981-16-7657-4_71",
     },
