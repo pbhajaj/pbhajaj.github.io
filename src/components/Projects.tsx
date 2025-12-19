@@ -15,6 +15,18 @@ type Project = {
 export const Projects = () => {
   const projects: Project[] = [
     {
+      title: "Voice-Driven Stock Trading Agent",
+      description:
+      "Real-time voice agent that uses Gemini tool calling to handle stock price queries and simulated trades through a streaming STT -> LLM -> TTS pipeline.",
+      technologies: ["LangChain", "LangGraph", "Gemini", "FastAPI", "Python"],
+      github: "https://github.com/prembhajaj/Voice-Driven-Stock-Trading-Agent",
+      features: [
+      "Built a voice-based agent that performs stock price lookups and executes simulated trades with ~3-second response time.",
+      "Tuned prompts for voice-friendly responses, reducing average output length by 40% and removing non-verbal characters.",
+      "Implemented streaming audio I/O to enable low-latency, conversational interactions.",
+      ],
+    },
+    {
       title: "Survival Prognosis Assistant - TCGA Lung Cancer",
       description:
         "Agentic AI copilot where Gemini-powered tools analyze TCGA clinical, genomic, and imaging data to answer clinician prompts with actionable survival guidance.",
