@@ -8,7 +8,7 @@ export const Education = () => {
       degree: "Master of Science in Computer Science",
       school: "Binghamton University – SUNY",
       location: "Binghamton, NY",
-      duration: "Jan 2024 - Dec 2025",
+      duration: "Jan 2024 - May 2025",
       gpa: "3.92/4.00",
       coursework: [
         "Deep Learning",
