@@ -17,7 +17,7 @@ export const Projects = () => {
     {
       title: "Voice-Driven Stock Trading Agent",
       description:
-      "Real-time voice agent that uses Gemini tool calling to handle stock price queries and simulated trades through a streaming STT -> LLM -> TTS pipeline.",
+      "Real-time voice-driven agent that uses Gemini 2.5 Flash tool calling to handle stock price queries and simulated trades through a streaming Speech-to-Text -> LLM -> Text-to-Speech pipeline.",
       technologies: ["LangChain", "LangGraph", "Gemini", "FastAPI", "Python"],
       github: "https://github.com/prembhajaj/Voice-Driven-Stock-Trading-Agent",
       features: [
@@ -65,6 +65,8 @@ export const Projects = () => {
     },
   ];
 
+  const useTwoColumnDesktop = projects.length === 4;
+
   return (
     <section
       id="projects"
@@ -81,7 +83,11 @@ export const Projects = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div
+          className={`grid grid-cols-1 lg:grid-cols-2 gap-8${
+            useTwoColumnDesktop ? " xl:grid-cols-2" : " xl:grid-cols-3"
+          }`}
+        >
           {projects.map((project) => (
             <Card
               key={project.title}
